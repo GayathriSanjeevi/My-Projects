@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Loan Prediction System</title>
+</head>
+<body>
+    <h1>Enter the following details of the applicant</h1>
+    <form action= "{{ url_for('result') }}" method="post">
+        <label for="input1"> Annual Income:</label>
+        <input type="number" id="input1" name="input1" required>
+        <br><br>
+        <label for="input2"> Loan Amount: </label>
+        <input type="number" id="input2" name="input2" required>
+        <br><br>
+        <label for="input3">Loan term: </label>
+        <input type="number" id="input3" name="input3" required>
+        <br><br>
+        <label for="input4"> Enter valid Cibil_score:</label>
+        <input type="number" id="input4" name="input4" required>
+        <br><br>
+       
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>
